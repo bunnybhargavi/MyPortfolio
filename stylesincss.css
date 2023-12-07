@@ -1,0 +1,113 @@
+header{
+    align-content: center;
+    background-color:#2196F3;
+    height: 100vh;
+    color: white;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header h1{
+    text-align: center;
+    color:white;
+}
+*{
+    font-family: monospace;
+}
+
+.button{
+    height:40px;
+    width:140px;
+    border:none;
+    border-radius:10px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.button:hover{
+    color:white;
+    background-color:#0a27e2;
+}
+body{
+    margin:0px;
+    background-color:white;
+}
+section{
+    height:100vh;
+    border:1px solid grey;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+main{
+    padding:20px;
+}
+h1{
+    color:#2196F3;
+}
+.submit{
+    height:40px;
+    width:140px;
+    border:none;
+    border-radius:15px;
+    cursor: pointer;
+    background-color:rgb(56, 122, 222) ;
+}
+.submit:hover{
+    color:white;
+    background-color:#2196f3;
+}
+input{
+    border-radius: 5px;
+    border:1px solid lightgray;
+    height:15px;
+}
+footer{
+    justify-content: center;
+    height: 140px;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+}
+.fixedbutton{
+    position:fixed;
+    background-color: #2196F3;
+    height:60px;
+    width:60px;
+    cursor:pointer;
+    border-radius: 50%;
+    bottom: 10px;
+    right:10px;
+    border: 1px solid black;
+
+}
+.about{
+    text-align: center;
+}
+.skills{
+    text-align: center;
+}
+.projects{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+}
+ol.list{
+    text-align:center ;
+    display: inline-block;
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
