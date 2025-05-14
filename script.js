@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
 // =============== TYPING ANIMATION ===============
 document.addEventListener('DOMContentLoaded', () => {
   const typed = new Typed('.typing', {
-      strings: ['Frontend Developer', 'Creative Coder','Student'],
+      strings: ['Frontend Developer', 'Coder','Student'],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
@@ -414,101 +414,6 @@ document.addEventListener('DOMContentLoaded', function() {
         svg.insertBefore(defs, svg.firstChild);
     });
 });
-
-
-
-
-
-
-// // Initialize EmailJS with your user ID once the page loads
-// // You need to sign up for a free account at emailjs.com
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Replace "your_user_id_here" with your actual EmailJS user ID
-//     emailjs.init("OQvb1F-Xx9QoWXyQZ");
-// });
-
-// // Add an event listener to the contact form
-// document.getElementById('contactForm').addEventListener('submit', function(event) {
-//     event.preventDefault(); // Prevent the default form submission
-
-//     // Show loading state
-//     const submitBtn = this.querySelector('button[type="submit"]');
-//     const originalBtnText = submitBtn.innerHTML;
-//     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-//     submitBtn.disabled = true;
-
-//     // Get form data
-//     const nameInput = document.getElementById('name');
-//     const emailInput = document.getElementById('email');
-//     const subjectInput = document.getElementById('subject');
-//     const messageInput = document.getElementById('message');
-
-//     // Create template parameters object for EmailJS
-//     const templateParams = {
-//         from_name: nameInput.value,
-//         from_email: emailInput.value,
-//         subject: subjectInput.value,
-//         message: messageInput.value,
-//         email: 'bunny123bhargavi@gmail.com'
-//     };
-
-
-//     console.log('Sending templateParams:', templateParams);
-
-//     // Send the email using EmailJS
-//     // Replace "your_service_id" and "your_template_id" with your actual IDs
-//     emailjs.send("service_r1k1ve7", "template_4w6d49y", templateParams)
-//         .then(function(response) {
-//             console.log('SUCCESS!', response.status, response.text);
-            
-//             // Show success message
-//             showNotification('Message sent successfully! I will get back to you soon.', 'success');
-            
-//             // Reset the form
-//             document.getElementById('contactForm').reset();
-//         })
-//         .catch(function(error) {
-//             console.log('FAILED...', error);
-            
-//             // Show error message
-//             showNotification('Failed to send message. Please try again later.', 'error');
-//         })
-//         .finally(function() {
-//             // Restore button state
-//             submitBtn.innerHTML = originalBtnText;
-//             submitBtn.disabled = false;
-//         });
-// });
-
-// // Function to show notification
-// function showNotification(message, type) {
-//     // Create notification element
-//     const notification = document.createElement('div');
-//     notification.className = `notification ${type}`;
-//     notification.innerHTML = `
-//         <div class="notification-content">
-//             <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
-//             <p>${message}</p>
-//         </div>
-//         <button class="notification-close"><i class="fas fa-times"></i></button>
-//     `;
-    
-//     // Add notification to the page
-//     document.body.appendChild(notification);
-    
-//     // Add event listener to close button
-//     notification.querySelector('.notification-close').addEventListener('click', function() {
-//         notification.remove();
-//     });
-    
-//     // Automatically remove notification after 5 seconds
-//     setTimeout(function() {
-//         notification.classList.add('fade-out');
-//         setTimeout(function() {
-//             notification.remove();
-//         }, 500); // Wait for fade out animation
-//     }, 5000);
-// }
 
 document.addEventListener('DOMContentLoaded', function () {
   emailjs.init("OQvb1F-Xx9QoWXyQZ"); // ✅ Replace with your actual public key
